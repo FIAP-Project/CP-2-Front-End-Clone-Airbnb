@@ -5,7 +5,7 @@ header {
 
 .header-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 
     margin: 0 auto;
@@ -26,6 +26,9 @@ header {
 
     height: 48px;
 
+    min-width: 348px;
+
+    margin: 0 0 0 185px;
     padding-left: 8px;
 
     border: 1px solid #dddddd;
