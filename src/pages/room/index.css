@@ -5,7 +5,7 @@ header {
 
 .header-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 
     margin: 0 auto;
@@ -162,4 +162,78 @@ nav {
 
 .nav-user-icon {
     color: rgb(106, 106, 106);
+}
+
+main {
+    margin: 22px auto;
+    padding: 0 80px;
+
+    max-width: 1280px;
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-container h1 {
+    font-size: 1.625rem;
+    line-height: 30px;
+}
+
+.links-container {
+    display: flex;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-left: 30px;
+}
+
+.link:hover {
+    cursor: pointer;
+}
+
+.link a {
+    font-size: 0.875rem;
+    font-weight: 500;
+
+    color: #000000;
+}
+
+.images-grid {
+    display: grid;
+    grid-template-rows: 250px 250px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 8px;
+
+    margin-top: 22px;
+}
+
+.images-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-acomodacao1 {
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+}
+
+.img-acomodacao1 img {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.img-acomodacao3 img {
+    border-top-right-radius: 15px;
+}
+
+.img-acomodacao5 img {
+    border-bottom-right-radius: 15px;
 }
