@@ -1,0 +1,160 @@
+header {
+    height: 80px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 auto;
+
+    height: 80px;
+    max-width: 1280px;
+
+    padding: 0 80px;
+}
+
+.logo {
+    color: rgb(255, 56, 92);
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+
+    height: 48px;
+
+    border: 1px solid #dddddd;
+    border-radius: 30px;
+
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: 0.1s;
+
+    cursor: pointer;
+}
+
+.search-container:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+}
+
+.search-container button {
+    font-size: 14px;
+    font-weight: 550;
+
+    color: rgb(34, 34, 34);
+
+    background: none;
+    border: none;
+
+    padding: 0 16px;
+
+    cursor: pointer;
+}
+
+.search-container .search-guests-button {
+    font-weight: 400;
+
+    color: rgb(106, 106, 106);
+}
+
+.search-vertical-line {
+    height: 20px;
+
+    border: 1px solid #dddddd;
+}
+
+.search-icon {
+    height: 32px;
+    width: 32px;
+
+    margin-right: 7px;
+
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 56, 92);
+
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.search-icon svg {
+    margin: 10px auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-announce-and-idiom {
+    display: flex;
+    justify-content: flex-end;
+
+    margin-right: 8px;
+}
+
+.nav-announce-and-idiom a {
+    font-size: 14px;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    color: rgb(34, 34, 34);
+
+    padding: 12px;
+}
+.nav-announce-and-idiom a:hover {
+    background-color: #f7f7f7;
+
+    border-radius: 30px;
+}
+
+.nav-idiom button {
+    width: 46px;
+    height: 42px;
+
+    padding: 12px;
+
+    background: none;
+    border: none;
+
+    cursor: pointer;
+}
+
+.nav-idiom svg {
+    margin: 0 auto;
+}
+
+.nav-idiom:hover {
+    background-color: #f7f7f7;
+    border-radius: 50%;
+}
+
+.nav-user button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+
+    height: 48px;
+    padding: 8px;
+
+    background: none;
+
+    border: 1px solid #dddddd;
+    border-radius: 30px;
+
+    transition: 0.1s;
+
+    cursor: pointer;
+}
+
+.nav-user button:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+}
+
+.nav-user-icon {
+    color: rgb(106, 106, 106);
+}
