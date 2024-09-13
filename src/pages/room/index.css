@@ -17,7 +17,7 @@ header {
     height: 80px;
     max-width: 1280px;
 
-    padding: 0 345px;
+    padding: 0 80px;
 }
 
 .logo {
@@ -170,7 +170,7 @@ nav {
 
 main {
     margin: 22px auto;
-    padding: 0 345px;
+    padding: 0 80px;
 
     max-width: 1280px;
 }
@@ -261,7 +261,7 @@ main {
 
 .more-photos-button {
     position: relative;
-    left: 60px;
+    left: 80px;
     bottom: 60px;
 }
 
@@ -336,4 +336,14 @@ main {
     text-decoration: underline;
 
     color: rgb(34, 34, 34);
+}
+
+@media (max-width: 1128px) {
+    main {
+        padding: 0 40px;
+    }
+
+    .header-container {
+        padding: 0 40px;
+    }
 }
