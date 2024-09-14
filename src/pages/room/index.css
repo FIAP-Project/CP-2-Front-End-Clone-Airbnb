@@ -352,8 +352,18 @@ main {
     box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px 0px;
 }
 
+.price-box-top span:first-child {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.price-box-top span:nth-child(2) {
+    font-size: 16px;
+}
+
 .checking-container {
     display: flex;
+    margin-top: 24px;
 
     border: 1px solid #b0b0b0;
 
@@ -369,10 +379,32 @@ main {
 
     background: none;
     border: none;
+
+    cursor: pointer;
 }
 
 .checking-container .checking {
     border-right: 1px solid #b0b0b0;
+}
+
+.checking div:first-child {
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.checkout div:first-child {
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.checking div:nth-child(2) {
+    font-size: 14px;
+}
+
+.checkout div:nth-child(2) {
+    font-size: 14px;
 }
 
 .guests-amount button {
@@ -394,6 +426,37 @@ main {
 
     text-align: start;
     width: 100%;
+
+    cursor: pointer;
+}
+
+.guests-text div:first-child {
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.guests-text div:nth-child(2) {
+    font-size: 14px;
+}
+
+.booking-button {
+    font-size: 16px;
+    font-weight: 500;
+
+    width: 100%;
+
+    margin-top: 16px;
+
+    padding: 14px 24px;
+
+    border: none;
+    border-radius: 8px;
+
+    color: white;
+    background-image: linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%);
+
+    cursor: pointer;
 }
 
 @media (max-width: 1128px) {
