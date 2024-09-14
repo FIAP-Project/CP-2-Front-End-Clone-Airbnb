@@ -459,6 +459,17 @@ main {
     cursor: pointer;
 }
 
+.price-box-middle {
+    margin-top: 16px;
+}
+
+.price-box-middle div {
+    font-size: 14px;
+    text-align: center;
+
+    color: rgb(34, 34, 34);
+}
+
 @media (max-width: 1128px) {
     main {
         padding: 0 40px;
