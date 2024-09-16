@@ -419,6 +419,33 @@ main {
     margin-top: 4px;
 }
 
+.translation-warn {
+    padding-top: 32px;
+}
+
+.translation-warn div {
+    display: flex;
+    gap: 2px;
+
+    font-size: 16px;
+    padding: 16px;
+    background-color: rgb(247, 247, 247);
+
+    border-radius: 8px;
+}
+
+.translation-warn div button {
+    font-size: 16px;
+    font-weight: 550;
+
+    text-decoration: underline;
+
+    border: none;
+    background: none;
+
+    cursor: pointer;
+}
+
 .price-box {
     padding: 24px;
     margin-top: 32px;
