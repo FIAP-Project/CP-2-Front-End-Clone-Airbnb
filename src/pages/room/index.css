@@ -533,6 +533,32 @@ main {
     margin-top: 4px;
 }
 
+.report {
+    margin-top: 24px;
+}
+
+.report button {
+    display: flex;
+    justify-content: center;
+    gap: 19px;
+
+    width: 100%;
+
+    border: none;
+    background: none;
+
+    color: rgb(106, 106, 106);
+
+    font-size: 14px;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+.report button p {
+    text-decoration: underline;
+}
+
 @media (max-width: 1128px) {
     main {
         padding: 0 40px;
