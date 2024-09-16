@@ -504,6 +504,11 @@ main {
     cursor: pointer;
 }
 
+.place-info button:hover {
+    border-color: #000000;
+    background-color: #F7F7F7;
+}
+
 .icon-infos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
