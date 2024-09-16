@@ -529,8 +529,9 @@ main {
 
 .best-price-text p {
     font-size: 14px;
-
     margin-top: 4px;
+
+    color: rgb(106, 106, 106);
 }
 
 .report {
