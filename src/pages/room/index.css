@@ -528,6 +528,61 @@ main {
     text-decoration: line-through;
 }
 
+.calendar-container {
+    padding: 48px 0;
+}
+
+.calendar-container img {
+    height: 325px;
+
+    padding: 20px 0;
+}
+
+.calendar-text h2 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.calendar-text p {
+    font-size: 14px;
+    color: rgb(106, 106, 106);
+
+    padding-top: 8px;
+}
+
+.calendar-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar-buttons button {
+    border: none;
+    background: none;
+
+    padding: 8px;
+
+    cursor: pointer;
+}
+
+.calendar-buttons button:hover {
+    background-color: #F7F7F7;
+}
+
+.calendar-buttons button:first-child {
+    border-radius: 50%;
+}
+
+.calendar-buttons button:nth-child(2) {
+    font-size: 14px;
+
+    border-radius: 8px;
+
+    font-weight: 500;
+    text-decoration: underline;
+}
+
 .price-box {
     padding: 24px;
     margin-top: 32px;
