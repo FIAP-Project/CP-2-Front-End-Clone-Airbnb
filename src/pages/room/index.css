@@ -291,7 +291,6 @@ main {
 .infos-container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .info-container {
@@ -337,10 +336,6 @@ main {
 
     color: rgb(34, 34, 34);
 }
-
-/* .price-container {
-    margin-left: 84px;
-} */
 
 .price-box {
     padding: 24px;
