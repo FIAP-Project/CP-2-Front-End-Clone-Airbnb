@@ -297,6 +297,10 @@ main {
     width: 60%;
 }
 
+.price-container {
+    max-width: 30%;
+}
+
 .overview-container {
     padding: 32px 0;
 
@@ -497,6 +501,36 @@ main {
     padding-top: 24px;
 
     border-top: 1px solid #dddddd;
+}
+
+.whole-price {
+    padding-bottom: 48px;
+}
+
+.best-price {
+    display: flex;
+    gap: 16px;
+
+    margin-top: 24px;
+    padding: 24px;
+
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+}
+
+.best-price-text {
+    min-height: 40px;
+}
+
+.best-price-text h2 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.best-price-text p {
+    font-size: 14px;
+
+    margin-top: 4px;
 }
 
 @media (max-width: 1128px) {
