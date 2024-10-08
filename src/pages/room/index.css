@@ -877,6 +877,10 @@ main {
     font-weight: 500;
 }
 
+.item-avaliation span:last-child {
+    font-size: 18px;
+}
+
 .comments-section {
     padding: 48px 0;
     border-bottom: 1px solid #dddddd;
