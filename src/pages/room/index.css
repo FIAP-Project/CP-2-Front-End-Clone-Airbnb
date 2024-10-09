@@ -923,9 +923,15 @@ main {
 }
 
 .comment-user img {
-    border-radius: 50%;
-    max-width: 48px;
+    border-radius: 100%;
+
+    height: 100%;
     max-height: 48px;
+
+    width: 100%;
+    max-width: 48px;
+
+    object-fit: cover;
 }
 
 .comment-user h3 {
@@ -995,6 +1001,102 @@ main {
     background: none;
 
     cursor: pointer;
+}
+
+.host-info-section {
+    padding: 48px 0;
+    border-bottom: 1px solid #dddddd;
+}
+
+.host-info-section h2 {
+    font-size: 22px;
+    font-weight: 500;
+
+    margin-bottom: 24px;
+}
+
+.host-card {
+    display: flex;
+    justify-content: space-between;
+
+    height: 100%;
+    max-height: 230px;
+
+    max-width: 380px;
+    width: 100%;
+
+    padding: 32px 0;
+
+    border-radius: 24px;
+
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 20px 0px;
+}
+
+.host-card img {
+    height: 100%;
+    max-height: 104px;
+
+    width: 100%;
+    max-width: 104px;
+
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+
+.host-card h3 {
+    font-size: 32px;
+    font-weight: 700;
+
+    text-align: center;
+}
+
+.host-card-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    max-width: 258px;
+    width: 100%;
+}
+
+.superhost-span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.host-card-right {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    max-width: 96px;
+}
+
+.host-card-right-span span:first-child {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.host-card-right-span span:last-child {
+    font-size: 10px;
+    font-weight: 500;
+
+    padding-right: 5px;
+}
+
+.host-card-right hr {
+    color: #dddddd;
+    border-color: #dddddd;
+}
+
+.horizontal-line {
+    border-bottom: 1px solid #dddddd;
 }
 
 @media (max-width: 1128px) {
