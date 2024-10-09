@@ -1018,14 +1018,13 @@ main {
 .host-card {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     height: 100%;
     max-height: 230px;
 
     max-width: 380px;
     width: 100%;
-
-    padding: 32px 0;
 
     border-radius: 24px;
 
@@ -1097,6 +1096,119 @@ main {
 
 .horizontal-line {
     border-bottom: 1px solid #dddddd;
+}
+
+.host-info-text {
+    margin-top: 32px;
+}
+
+.host-info-text span {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.host-info-text-spans {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.host-info-text p {
+    margin-top: 32px;
+    max-width: 410px;
+}
+
+.host-info-text button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    margin-top: 16px;
+
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: underline;
+
+    border: none;
+    background: none;
+
+    cursor: pointer;
+}
+
+.host-info-section-items {
+    display: flex;
+    gap: 48px;
+}
+
+.host-info-left {
+    min-width: 410px;
+}
+
+.host-info-right {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.host-info-right h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.host-info-right p {
+    margin-top: 16px;
+}
+
+.cohost {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-top: 12px;
+}
+
+.cohost img {
+    height: 40px;
+    max-height: 100%;
+    
+    width: 100%;
+    max-width: 40px;
+
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.cohost-info {
+    margin-top: 16px;
+}
+
+.host-info-right button {
+    padding: 14px 24px;
+    max-width: 328px;
+
+    color: white;
+    background-color: rgb(34, 34, 34);
+    border-radius: 8px;
+    border: none;
+
+    cursor: pointer;
+}
+
+.host-info-right button:hover {
+    background-color: black;
+}
+
+.protect-payment {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    
+    margin-top: 24px;
+}
+
+.protect-payment span {
+    font-size: 12px;
 }
 
 @media (max-width: 1128px) {
