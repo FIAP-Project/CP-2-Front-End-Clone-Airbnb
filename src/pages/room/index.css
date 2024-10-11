@@ -621,17 +621,18 @@ main {
 
 .checking-container {
     display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
     margin-top: 24px;
+}
 
-    border: 1px solid #b0b0b0;
-
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+.checking-container div {
+    width: 100%;
 }
 
 .checking-container button {
-    height: 100%;
-    padding: 13px 73px 13px 11px;
+    position: relative;
+    width: 100%;
 
     text-align: start;
 
@@ -642,27 +643,66 @@ main {
 }
 
 .checking-container .checking {
-    border-right: 1px solid #b0b0b0;
+    border-top-left-radius: 8px;
+
+    border: 1px solid #b0b0b0;
+}
+
+.checking-container .checkout {
+    border-top-right-radius: 8px;
+
+    border: 1px solid #b0b0b0;
+    border-left: none;
+}
+
+.checking-div {
+    flex-grow: 1;
+    flex-shrink: 1;
+    overflow: hidden;
+}
+
+.checkout-div {
+    flex-grow: 1;
+    flex-shrink: 1;
+    overflow: hidden;
 }
 
 .checking div:first-child {
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 700;
     margin-bottom: 4px;
+
+    position: absolute;
+    top: 12px;
+    left: 12px;
+
+    text-wrap: nowrap;
 }
 
 .checkout div:first-child {
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 700;
     margin-bottom: 4px;
+
+    position: absolute;
+    top: 12px;
+    left: 12px;
+
+    text-wrap: nowrap;
 }
 
-.checking div:nth-child(2) {
+.checking div:last-child {
     font-size: 14px;
+    padding: 26px 12px 10px 12px;
+
+    text-overflow: ellipsis;
 }
 
-.checkout div:nth-child(2) {
+.checkout div:last-child {
     font-size: 14px;
+    padding: 26px 12px 10px 12px;
+
+    text-overflow: ellipsis;
 }
 
 .guests-amount button {
@@ -689,7 +729,7 @@ main {
 }
 
 .guests-text div:first-child {
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 700;
     margin-bottom: 2px;
 }
