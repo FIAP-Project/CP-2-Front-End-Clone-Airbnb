@@ -24,15 +24,17 @@ header {
     color: rgb(255, 56, 92);
 }
 
+.logo div:last-child {
+    display: none;
+}
+
 .search-container {
     display: flex;
     align-items: center;
 
-    height: 48px;
+    min-height: 48px;
 
-    min-width: 348px;
-
-    margin: 0 0 0 185px;
+    margin: 0 24px;
     padding-left: 8px;
 
     border: 1px solid #dddddd;
@@ -57,10 +59,16 @@ header {
     background: none;
     border: none;
 
-    padding: 0 16px;
-
     cursor: pointer;
 }
+
+.buttontext {
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    text-overflow: ellipsis;
+    padding: 0 16px;
+}​
 
 .search-container .search-guests-button {
     font-weight: 400;
@@ -75,8 +83,8 @@ header {
 }
 
 .search-icon {
-    height: 32px;
-    width: 32px;
+    min-height: 32px;
+    min-width: 32px;
 
     margin-right: 7px;
 
@@ -90,6 +98,10 @@ header {
 
 .search-icon svg {
     margin: 10px auto;
+}
+
+.search-and-nav-container {
+    display: flex;
 }
 
 nav {
@@ -113,6 +125,8 @@ nav {
     color: rgb(34, 34, 34);
 
     padding: 12px;
+
+    text-wrap: nowrap;
 }
 .nav-announce-and-idiom a:hover {
     background-color: #f7f7f7;
@@ -1371,5 +1385,13 @@ footer {
 
     .header-container {
         padding: 0 40px;
+    }
+
+    .logo div:first-child {
+        display: none;
+    }
+
+    .logo div:last-child {
+        display: block;
     }
 }
