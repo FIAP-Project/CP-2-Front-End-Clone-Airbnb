@@ -1716,7 +1716,7 @@ footer {
     }
 
     .footer-bottom {
-        justify-content: start;
+        flex-direction: column-reverse;
         max-width: 100%;
     }
 
