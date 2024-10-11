@@ -64,7 +64,6 @@ header {
 
 .buttontext {
     overflow: hidden;
-    white-space: nowrap;
     display: block;
     text-overflow: ellipsis;
     padding: 0 16px;
