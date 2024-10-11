@@ -882,12 +882,23 @@ main {
     display: flex;
 }
 
+.item-avaliation svg {
+    width: 32px;
+    height: 32px;
+}
+
+.item-avaliation-communication-svg {
+    stroke: currentColor;
+    stroke-width: 2.66;
+}
+
 .item-avaliation-bars {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     max-width: 170px;
+    min-width: 132px;
     width: 100%;
     height: 106px;
 
@@ -902,8 +913,8 @@ main {
 
 .item-avaliation-bars ol li {
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 6px;
 }
 
 .black-bar {
@@ -1446,6 +1457,23 @@ footer {
         grid-template-columns: repeat(1, 1fr);
         gap: 16px;
     }
+
+    .item-avaliation span {
+        font-size: 12px;
+    }
+
+    .item-avaliation span:last-child {
+        font-size: 12px;
+    }
+
+    .item-avaliation svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .items-avaliation {
+        overflow-x: scroll;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -1456,5 +1484,11 @@ footer {
     .calendar-one {
         display: block;
         width: 100%;
+    }
+}
+
+@media (max-width: 743px) {
+    .avaliation-container {
+        display: none;
     }
 }
