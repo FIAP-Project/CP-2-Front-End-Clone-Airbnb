@@ -360,6 +360,10 @@ main {
     color: rgb(34, 34, 34);
 }
 
+.best-price-cellphone {
+    display: none;
+}
+
 .host {
     display: flex;
     gap: 24px;
@@ -1490,5 +1494,30 @@ footer {
 @media (max-width: 743px) {
     .avaliation-container {
         display: none;
+    }
+
+    .price-container {
+        display: none;
+    }
+
+    .infos-container {
+        display: block;
+    }
+
+    .info-container {
+        width: 100%;
+    }
+
+    main {
+        padding: 0 24px;
+    }
+
+    .best-price-cellphone {
+        display: flex;
+        gap: 16px;
+
+        padding: 24px 0;
+
+        border-bottom: 1px solid #dddddd;
     }
 }
