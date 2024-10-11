@@ -1355,6 +1355,18 @@ main {
     cursor: pointer;
 }
 
+.what-to-know-item .what-to-know-item-button-cellphone {
+   display: none;
+}
+
+.cancel-politics-cellphone {
+    display: none;
+}
+
+.know-item-3-svg {
+    display: none;
+}
+
 footer {
     background-color: rgb(247, 247, 247);
 }
@@ -1715,6 +1727,67 @@ footer {
         display: none;
     }
 
+    .what-to-know-section {
+        padding: 0;
+    }
+
+    .what-to-know-section h2 {
+        display: none;
+    }
+
+    .what-to-know-items {
+        flex-direction: column-reverse;
+    }
+
+    .what-to-know-item {
+        padding: 24px 0;
+
+        min-width: 100%;
+        border-bottom: 1px solid #dddddd;
+
+        cursor: pointer;
+    }
+
+    .know-item-1 {
+        border: none;
+    }
+
+    .know-item-3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .know-item-3 div:first-child {
+        margin-bottom: 0;
+    }
+
+    .know-item-3-svg {
+        display: block;
+        padding-left: 8px;
+    }
+
+    .what-to-know-item div {
+        margin-bottom: 8px;
+    }
+
+    .what-to-know-item h3 {
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+
+    .what-to-know-item span {
+        font-size: 14px;
+    }
+
+    .what-to-know-item button {
+        margin-top: 8px;
+    }
+
+    .footer-top {
+        border-top: 8px solid #dddddd;
+    }
+
     .footer-bottom {
         flex-direction: column-reverse;
         max-width: 100%;
@@ -1726,6 +1799,22 @@ footer {
     }
 
     .footer-bottom-social-media {
+        display: none;
+    }
+
+    .what-to-know-item .what-to-know-item-button-desktop {
+        display: none;
+    }
+
+    .what-to-know-item .what-to-know-item-button-cellphone {
+        display: block;
+    }
+
+    .cancel-politics-cellphone {
+        display: block;
+    }
+
+    .cancel-politics-desktop {
         display: none;
     }
 }
