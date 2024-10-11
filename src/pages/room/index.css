@@ -557,6 +557,10 @@ main {
     padding: 20px 0;
 }
 
+.calendar-one {
+    display: none;
+}
+
 .calendar-text h2 {
     font-size: 22px;
     font-weight: 500;
@@ -1441,5 +1445,16 @@ footer {
     .icon-infos {
         grid-template-columns: repeat(1, 1fr);
         gap: 16px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .calendar-two {
+        display: none;
+    }
+
+    .calendar-one {
+        display: block;
+        width: 100%;
     }
 }
