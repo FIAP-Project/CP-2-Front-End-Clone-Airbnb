@@ -1095,7 +1095,7 @@ main {
 }
 
 .host-info-section {
-    padding: 48px 0;
+    padding: 40px 0;
     border-bottom: 1px solid #dddddd;
 }
 
@@ -1207,7 +1207,11 @@ main {
 
 .host-info-text p {
     margin-top: 32px;
-    max-width: 410px;
+    max-width: 395px;
+    max-height: 36px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .host-info-text button {
@@ -1501,6 +1505,31 @@ footer {
     .calendar-one {
         display: block;
         width: 100%;
+    }
+}
+
+@media (max-width: 949px) {
+    .host-info-section-items {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .host-info-left {
+        min-width: auto;
+        padding-bottom: 32px;
+    }
+
+    .host-info-right {
+        padding-top: 32px;
+        border-top: 1px solid #dddddd;
+    }
+
+    .host-card {
+        padding: 20px 0;
+    }
+
+    .host-info-text p {
+        max-width: 100%;
     }
 }
 
