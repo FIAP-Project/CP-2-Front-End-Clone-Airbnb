@@ -1570,6 +1570,34 @@ footer {
         height: 14px;
     }
 
+    .cool-infos {
+        padding: 24px 0;
+    }
+
+    .place-info {
+        padding: 32px 0 24px;
+    }
+
+    .place-info button {
+        width: 100%;
+    }
+
+    .location-section {
+        padding: 32px 0 24px;
+    }
+
+    .calendar-container {
+        padding: 24px 0;
+    }
+
+    .comments-section {
+        padding: 32px 0 24px;
+    }
+
+    .host-info-section {
+        padding: 32px 0 24px;
+    }
+
     .avaliation-container {
         display: none;
     }
