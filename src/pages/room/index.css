@@ -201,6 +201,10 @@ main {
     line-height: 30px;
 }
 
+.acomodacoes-button {
+    display: none;
+}
+
 .links-container {
     display: flex;
 }
@@ -326,6 +330,10 @@ main {
     border-bottom: 1px solid #dddddd;
 }
 
+.overview-text-top h1 {
+    display: none;
+}
+
 .overview-text-top h2 {
     font-size: 22px;
     font-weight: 500;
@@ -352,6 +360,11 @@ main {
     gap: 4px;
 
     margin-top: 8px;
+}
+
+.overview-text-bottom svg {
+    width: 16px;
+    height: 16px;
 }
 
 .overview-text-bottom a {
@@ -1492,6 +1505,71 @@ footer {
 }
 
 @media (max-width: 743px) {
+    header {
+        display: none;
+    }
+
+    .top-container h1 {
+        display: none;
+    }
+
+    .acomodacoes-button {
+        display: block;
+    }
+
+    .acomodacoes-button a {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        font-size: 14px;
+        font-weight: 500;
+
+        cursor: pointer;
+    }
+
+    .acomodacoes-button a:hover {
+        text-decoration: underline;
+    }
+
+    .link {
+        border-radius: 50%;
+    }
+
+    .link a {
+        display: none;
+    }
+
+    .overview-container {
+        padding: 24px 0;
+    }
+
+    .overview-text-top h1 {
+        display: block;
+
+        font-size: 26px;
+        font-weight: 500;
+
+        padding-bottom: 16px;
+    }
+
+    .overview-text-top h2 {
+        font-size: 16px;
+    }
+
+    .overview-text-middle li {
+        font-size: 14px;
+    }
+
+    .overview-text-bottom {
+        font-size: 14px;
+    }
+
+    .overview-text-bottom svg {
+        width: 14px;
+        height: 14px;
+    }
+
     .avaliation-container {
         display: none;
     }
