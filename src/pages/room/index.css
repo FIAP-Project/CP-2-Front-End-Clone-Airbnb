@@ -461,6 +461,8 @@ main {
     background: none;
 
     cursor: pointer;
+
+    text-wrap: nowrap
 }
 
 .description {
@@ -1392,5 +1394,10 @@ footer {
 
     .logo div:last-child {
         display: block;
+    }
+
+    .icon-infos {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
     }
 }
