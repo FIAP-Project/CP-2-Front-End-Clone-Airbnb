@@ -1626,4 +1626,13 @@ footer {
 
         border-bottom: 1px solid #dddddd;
     }
+
+    .calendar-one {
+        max-width: 530px;
+        margin: 0 auto;
+    }
+
+    .calendar-buttons button:first-child {
+        display: none;
+    }
 }
