@@ -1379,6 +1379,7 @@ footer {
 }
 
 .footer-top-items a {
+    font-size: 14px;
     text-decoration: none;
     color: #000000;
 }
@@ -1495,6 +1496,31 @@ footer {
     .items-avaliation {
         overflow-x: scroll;
     }
+
+    .footer-top-items {
+        padding: 0 40px;
+    }
+
+    .footer-middle {
+        padding: 0 40px;
+    }
+
+    .footer-bottom {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        gap: 16px;
+
+        padding: 24px 40px;
+        max-width: 500px;
+    }
+
+    .footer-bottom div:first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -1530,6 +1556,30 @@ footer {
 
     .host-info-text p {
         max-width: 100%;
+    }
+
+    .footer-top-items {
+        padding: 0 24px;
+    }
+
+    .footer-middle {
+        padding: 0 24px;
+        flex-direction: column;
+    }
+
+    .footer-middle-item {
+        padding: 24px 0;
+        min-width: 100%;
+
+        border-top: 1px solid #dddddd;
+    }
+
+    .footer-middle div:first-child  {
+        border-top: none;
+    }
+
+    .footer-bottom {
+        padding: 24px 24px;
     }
 }
 
@@ -1662,6 +1712,20 @@ footer {
     }
 
     .calendar-buttons button:first-child {
+        display: none;
+    }
+
+    .footer-bottom {
+        justify-content: start;
+        max-width: 100%;
+    }
+
+    .footer-bottom div:first-child {
+        justify-content: start;
+        align-items: start;
+    }
+
+    .footer-bottom-social-media {
         display: none;
     }
 }
