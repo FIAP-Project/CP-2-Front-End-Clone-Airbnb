@@ -324,6 +324,10 @@ main {
     max-width: 30%;
 }
 
+.fixed-bottom-price {
+    display: none;
+}
+
 .overview-container {
     padding: 32px 0;
 
@@ -1817,4 +1821,52 @@ footer {
     .cancel-politics-desktop {
         display: none;
     }
-}
+
+    .fixed-bottom-price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        position: fixed;
+        bottom: 0;
+
+        width: 91%;
+
+        min-height: 80px;
+        padding: 0 24px;
+
+        z-index: 1000;
+
+        background-color: white;
+        border-top: 1px solid #dddddd;
+
+        overflow: visible;
+    }
+
+    .fixed-bottom-price-div {
+        padding: 16px 0;
+    }
+
+    .booking-button {
+        max-width: 200px;
+        height: 48px;
+        margin-top: 0;
+    }
+
+    .fixed-bottom-price-price {
+      padding: 0; 
+    }
+
+    .fixed-bottom-price-price span:first-child {
+        font-weight: 500;
+    }
+
+    .fixed-bottom-price-price span:nth-child(2) {
+        font-size: 14px;
+    }
+    .fixed-bottom-price-price span:last-child {
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: underline;
+    }
+}   
