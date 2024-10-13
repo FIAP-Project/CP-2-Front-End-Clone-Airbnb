@@ -20,6 +20,12 @@ header {
     padding: 0 80px;
 }
 
+.logo-container {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 140px;
+}
+
 .logo {
     color: rgb(255, 56, 92);
 }
@@ -28,14 +34,29 @@ header {
     display: none;
 }
 
+.search-container .search-guests-button {
+    font-weight: 400;
+
+    color: rgb(106, 106, 106);
+}
+
 .search-container {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+
+    min-width: 0;
+    padding: 0 24px;
+}
+
+ /* Professor eu tentei incansavelmente fazer o overflow do botão dentro do search. N consegui. */
+.search {
     display: flex;
+    justify-content: center;
     align-items: center;
+    text-align: center;
 
     min-height: 48px;
-
-    margin: 0 24px;
-    padding-left: 8px;
 
     border: 1px solid #dddddd;
     border-radius: 30px;
@@ -43,42 +64,61 @@ header {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05);
     transition: 0.1s;
 
-    cursor: pointer;
-}
-
-.search-container:hover {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
-}
-
-.search-container button {
     font-size: 14px;
-    font-weight: 550;
+    font-weight: 500;
 
-    color: rgb(34, 34, 34);
+    cursor: pointer;
+    overflow: hidden;
+}
 
-    background: none;
+.search-button1 button, .search-button2 button, .search-button3 button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     border: none;
+    background: none;
+
+    flex-shrink: 1;
+    flex-grow: 0;
+    flex-basis: auto;
+
+    height: 22px;
+    min-width: 0;
+    margin: -1px;
 
     cursor: pointer;
 }
 
-.buttontext {
-    overflow: hidden;
-    display: block;
+.search-text {
+    flex-shrink: 1;
+    flex-grow: 1;
+
     text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    min-width: 80px;
     padding: 0 16px;
-}​
+  }
 
-.search-container .search-guests-button {
-    font-weight: 400;
-
-    color: rgb(106, 106, 106);
+.search-button2 {
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
 }
 
-.search-vertical-line {
-    height: 20px;
+.search-button3 button {
+    color: #6a6a6a;
+}
 
-    border: 1px solid #dddddd;
+.search-and-nav-container {
+    display: flex;
+}
+
+.nav-container {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 140px;
 }
 
 .search-icon {
@@ -99,12 +139,9 @@ header {
     margin: 10px auto;
 }
 
-.search-and-nav-container {
-    display: flex;
-}
-
 nav {
     display: flex;
+    justify-content: end;
     align-items: center;
 }
 
@@ -1487,6 +1524,10 @@ footer {
         padding: 0 40px;
     }
 
+    .logo-container {
+        flex-basis: auto;
+    }
+
     .logo div:first-child {
         display: none;
     }
@@ -1897,7 +1938,7 @@ footer {
     }
 
     .fixed-bottom-price-price {
-      padding: 0; 
+      padding: 0;
     }
 
     .fixed-bottom-price-price span:first-child {
@@ -1912,4 +1953,4 @@ footer {
         font-weight: 500;
         text-decoration: underline;
     }
-}   
+}
