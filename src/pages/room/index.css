@@ -1050,6 +1050,8 @@ main {
 .comment-container {
     max-width: 473px;
     margin-right: 95px;
+
+    margin-bottom: 14px;
 }
 
 .comment-user {
@@ -1770,6 +1772,10 @@ footer {
 
     .comments-section {
         padding: 32px 0 24px;
+    }
+
+    .comments-section button {
+        width: 100%;
     }
 
     .host-info-section {
